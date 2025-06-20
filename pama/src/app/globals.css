@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
+    url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+[data-floating-ui-portal] > div:first-of-type {
+  z-index: 9999;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+/* input[type="datetime-local"] {
+  @apply relative;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  @apply rounded-md w-auto border border-red-500 opacity-0
+    bg-transparent absolute top-0 right-0 left-0 bottom-0 h-auto cursor-pointer;
+} */
+
+body:has(.landing-page) .site-header {
+  display: none;
+}

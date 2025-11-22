@@ -4,7 +4,6 @@ import BookingModal, { IBookingData } from "@/components/common/BookingModal";
 import { BookingCard } from "@/components/Service/BookingCard";
 import { HorizontalCard } from "@/components/Service/HorizontalCard";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Page() {
   const [bookingData, setBookingData] = useState<IBookingData | null>(null);

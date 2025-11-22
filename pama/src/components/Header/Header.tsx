@@ -26,6 +26,10 @@ const NAV_MENU = [
     href: "/about",
   },
   {
+    name: "Pāma Bistro",
+    href: "/menu",
+  },
+  {
     name: "Dịch Vụ",
     href: "/service",
   },

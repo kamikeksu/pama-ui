@@ -29,7 +29,7 @@ export default function BlogDetail() {
       const fetchData = async () => {
         try {
           const response = await fetch(
-            `https://pama-api.finance94.com/web/blog/get?slug=${slug}`
+            `https://api.pamaboutique.com/web/blog/get?slug=${slug}`
           );
           if (!response.ok) throw new Error("Failed to fetch blog data");
           const result = await response.json();

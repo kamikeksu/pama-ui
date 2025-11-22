@@ -23,7 +23,7 @@ export default function Page() {
     const fetchPosts = async () => {
       try {
         const blogData = await fetch(
-          "https://pama-api.finance94.com/web/blog/list?_page_start=1&_page_num=20&_sort_key=timestamp&_sort_dir=desc"
+          "https://api.pamaboutique.com/web/blog/list?_page_start=1&_page_num=20&_sort_key=timestamp&_sort_dir=desc"
         ).then((data) => data.json());
         setPosts(blogData?.data?.records || []);
       } catch (error) {

@@ -1,5 +1,5 @@
 build:
-	cd pama && npm run build
+	npm run build
 pm2:
 	PORT=8401 pm2 start npm --name "PamaUI" -- start
 
